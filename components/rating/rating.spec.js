@@ -1,1 +1,3 @@
-import App from './rating';
+import Rating from './rating';
+
+console.info(Rating);
