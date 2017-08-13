@@ -21,13 +21,13 @@ describe('port-ip', () => {
     expect(portIp().split(':').length).to.equal(2);
   });
 
-  it('should return true if the ip parts are between 0 to 255', () => {
+  it('should return true if the ip numbers are between 0 to 255', () => {
     for (let i of ip) {
       expect(parseInt(i)).to.be.within(0, 255);
     }
   });
 
-  it('should return true if the port part is between 0 to 65535', () => {
+  it('should return true if the port number is between 0 to 65535', () => {
     expect(parseInt(parts[1])).to.be.within(0, 65535);
   });
 });
