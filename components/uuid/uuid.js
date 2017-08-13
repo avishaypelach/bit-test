@@ -21,7 +21,7 @@ function uuid(a) {
     ).replace(     // replacing
       /[018]/g,    // zeroes, ones, an d eights with
       uuid         // random hex digits
-    )
+    );
 }
 
 module.exports = uuid;

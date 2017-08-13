@@ -2,6 +2,7 @@ import {expect} from 'chai';
 import portIp from './port-ip';
 
 describe('port-ip', () => {
+
   let parts = portIp().split(":");
   let ip = parts[0].split(".");
 
@@ -26,4 +27,5 @@ describe('port-ip', () => {
   it('should return true if the port number is between 0 to 65535', () => {
     expect(parseInt(parts[1])).to.be.within(0, 65535);
   });
+
 });
