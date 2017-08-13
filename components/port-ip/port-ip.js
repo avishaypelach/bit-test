@@ -1,3 +1,8 @@
+/**
+ * Returns a random ip port of the form xxx(ip).xxx(ip).xxx(ip).xxx(ip):xxxxxx(port),
+ * where each ip part is replaced with a random number from 0 to 255, and
+ * port is replaced with a random number from 0 to 65535.
+ */
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
