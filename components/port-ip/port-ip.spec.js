@@ -9,10 +9,6 @@ describe('port-ip', () => {
     expect(portIp()).to.be.a('string');
   });
 
-  it('should return 4 sub strings for ip parts', () => {
-    expect(ip.length).to.equal(4);
-  });
-
   it('should return 4 sub strings for port ip', () => {
     expect(portIp().split('.').length).to.equal(4);
   });
