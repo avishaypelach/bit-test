@@ -1,6 +1,6 @@
 import {expect} from 'chai';
 import sinon from 'sinon';
-import whichBrowser from './is-browser';
+import whichBrowser from './which-browser';
 
 let userAgent = '';
 
