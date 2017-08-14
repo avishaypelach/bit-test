@@ -20,4 +20,37 @@ describe('set name', () => {
     })
   });
 
+  it('should set firstName, lastName and middleName', () => {
+    let user = {location: 'Tel Aviv', age: 3};
+    let res = setName(user, 'Lee Ann Womack');
+
+    expect(res).to.include({
+      firstName: 'Lee',
+      middleName: 'Ann',
+      lastName: 'Womack'
+    })
+  });
+
+  it('should set firstName, lastName and 2 words middleName', () => {
+    let user = {location: 'Tel Aviv', age: 3};
+    let res = setName(user, 'Lee Ann Ann Womack');
+
+    expect(res).to.include({
+      firstName: 'Lee',
+      middleName: 'Ann Ann',
+      lastName: 'Womack'
+    })
+  });
+
+  it('should set firstName, lastName and 3 words middleName', () => {
+    let user = {location: 'Tel Aviv', age: 3};
+    let res = setName(user, 'Lee Ann Ann Ann Womack');
+
+    expect(res).to.include({
+      firstName: 'Lee',
+      middleName: 'Ann Ann Ann',
+      lastName: 'Womack'
+    })
+  });
+
 });
