@@ -10,7 +10,8 @@ function getRandomIntInclusive(min, max) {
 }
 
 function portIp() {
-  return `${getRandomIntInclusive(0, 255)}` +
+  return(
+    `${getRandomIntInclusive(0, 255)}` +
     '.' +
     `${getRandomIntInclusive(0, 255)}` +
     '.' +
@@ -18,7 +19,7 @@ function portIp() {
     '.' +
     `${getRandomIntInclusive(0, 255)}` +
     ':' +
-    `${getRandomIntInclusive(0, 65535)}`;
+    `${getRandomIntInclusive(0, 65535)}`);
 }
 
 module.exports = portIp;

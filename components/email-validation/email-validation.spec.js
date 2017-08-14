@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import checkEmail from './emil-validation';
 
-describe('emil-validation', () => {
+describe('emil validation', () => {
 
   it('should return email', () => {
     let res = checkEmail('avishay.pelach@gmail.com');

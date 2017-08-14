@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import portIp from './port-ip';
 
-describe('port-ip', () => {
+describe('port ip', () => {
 
   let parts = portIp().split(":");
   let ip = parts[0].split(".");
