@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import checkEmail from './emil-validation';
+import checkEmail from '../Implementation/emil-validation';
 
 describe('emil validation', () => {
 

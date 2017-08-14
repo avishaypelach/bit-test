@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import portIp from './port-ip';
+import portIp from '../Implementation/port-ip';
 
 describe('port ip', () => {
 

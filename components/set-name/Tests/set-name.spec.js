@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import setName from './set-name';
+import setName from '../Implementation/set-name';
 
 describe('set name', () => {
 

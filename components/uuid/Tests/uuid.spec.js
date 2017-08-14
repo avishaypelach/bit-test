@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import uuid from './uuid';
+import uuid from '../Implementation/uuid';
 
 describe('uuid', () => {
 
