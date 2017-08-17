@@ -11,5 +11,7 @@
     <orderEntry type="library" name="expect-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="expect.js-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="react-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="sinon-chai-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="sinon-DefinitelyTyped" level="application" />
   </component>
 </module>

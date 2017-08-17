@@ -1,13 +1,14 @@
-import 'normalize.css/normalize.css';
-import 'roboto-fontface/css/roboto/roboto-fontface.css';
-import './styles/main.scss';
+/**
+ * React rating component accepts an integer as an input between 1-5
+ * and draws stars according to the input number.
+ */
 import './styles/main.scss';
 
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { handlerSubmit } from './rating.utils'
-import { handleChange} from './rating.utils'
-import { howManyStars} from './rating.utils'
+
+import {handlerSubmit} from './rating.utils'
+import {handleChange} from './rating.utils'
 
 class Rating extends React.Component {
 
@@ -20,8 +21,17 @@ class Rating extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  howManyStars() {
+    let str = [];
+
+    for (let i = 0; i < this.state.starRate; i++) {
+      str.push(<div className="star-five" key={i.toString()}/>)
+    }
+    return str;
+  }
+
   render() {
-    return <div><h1>Rating:</h1>
+    return <div><h1>Enter a number between 1-5</h1>
       <form onSubmit={handlerSubmit}>
         <label>
           My Rating:
@@ -29,7 +39,7 @@ class Rating extends React.Component {
         </label>
       </form>
       <br/>
-      <div>{howManyStars()}</div>
+      <div>{this.howManyStars()}</div>
     </div>;
   }
 }
